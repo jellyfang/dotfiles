@@ -21,6 +21,7 @@ alias .....='cd ../../../..'
 alias ~='cd ~'
 alias -- -='cd --'
 alias ls='ls -l -G'
+alias lsa='ls -a -G'
 
 # Shortcuts
 alias shirtsio='cd ~/Dropbox/ooshirts/shirtsio'
