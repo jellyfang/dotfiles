@@ -1,0 +1,25 @@
+#!/bin/bash
+
+brew update
+brew upgrade
+brew install coreutils
+brew install findutils
+brew install bash
+brew install tree
+
+brew tap phinze/homebrew-cask
+brew install brew-cask
+
+function installcask() {
+  brew cask install "${@}" 2> /dev/null
+}
+
+installcask dropbox
+installcask google-chrome
+installcask google-chrome-canary
+installcask sublime-text
+installcask the-unarchiver
+installcask tor-browser
+installcask vlc
+
+brew cleanup
