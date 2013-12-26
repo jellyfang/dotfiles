@@ -12,6 +12,14 @@ mkdir -p "$*"
 cd "$*"
 }
 
+# Hamburger shell
+#export PS1="\w ð  "
+
+
+alias bp='vi ~/.bash_profile'
+alias sp='source ~/.bash_profile'
+
+
 # Easy navigation
 alias up='cd ..; ls -l'
 alias ..='cd ..'
@@ -22,6 +30,21 @@ alias ~='cd ~'
 alias -- -='cd --'
 alias ls='ls -l -G'
 alias lsa='ls -a -G'
+
+# Git shortcuts
+alias gs='git status'
+alias gc='git commit -m'
+alias go='git checkout'
+alias gp='git push origin master'
+alias gm='git push heroku master'
+alias gb='git branch'
+alias ga='git add .'
+alias gg='git pull'
+
+# Heroku shortcuts
+alias hc='heroku run python manage.py collectstatic --noinput'
+alias hl='heroku logs --tail'
+alias hs='heroku run python manage.py shell'
 
 # Shortcuts
 alias shirtsio='cd ~/Dropbox/ooshirts/shirtsio'
